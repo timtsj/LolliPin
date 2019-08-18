@@ -205,11 +205,11 @@ By supplying alternate drawable resources for app:lp_empty_pin_dot and app:lp_fu
 ### Import
 
 Fixed that by removing a build library from dependencies and added "lib" dir from github sources.
-0. Remove "implementation('com.github.omadahealth:lollipin:2..." from build.gradle
-1. Add "implementation project(':lib')" to build.gradle
-2. Add "include ':lib'" to your settings.gradle
-3. Copy(change if needed) variables from gradle.properties in lollipin github sources to your gradle.properties file
-4. Change to: if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected() &&            mFingerprintUiHelper.isFingerprintAuthAvailable() on line 147 in AppLockActivity.java
+1. Remove "implementation('com.github.omadahealth:lollipin:2.x.x" from build.gradle
+2. Add "implementation project(':lib')" to build.gradle
+3. Add "include ':lib'" to your settings.gradle
+4. Copy(change if needed) variables from gradle.properties in lollipin github sources to your gradle.properties file
+5. Change to: if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected() &&            mFingerprintUiHelper.isFingerprintAuthAvailable() on line 147 in AppLockActivity.java
 
 ========
 ### Credits
